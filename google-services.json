@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "192729641757",
+    "project_id": "rockethelp-89b6b",
+    "storage_bucket": "rockethelp-89b6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192729641757:android:ca1e32dd879efd4bdce7f4",
+        "android_client_info": {
+          "package_name": "com.evertonaraujo.rockethelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192729641757-nkl9kk45uq5s4buk55vs6tehn7m2cbjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7dlxpUxb419jhJ0dSLdAckEjUKwUtR14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192729641757-nkl9kk45uq5s4buk55vs6tehn7m2cbjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
