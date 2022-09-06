@@ -18,6 +18,7 @@ import Logo from '../assets/logo_secondary.svg';
 import { Filter } from "../components/Filter";
 import { Button } from "../components/Button";
 import { Order, OrderProps } from "../components/Order";
+import { Alert } from "react-native";
 
 export function Home() {
   const [statusSelected, setStatusSelected] = useState<'open' | 'closed'>('open');
@@ -41,8 +42,11 @@ export function Home() {
     navigation.navigate('details', { orderId });
   }
 
-  function logout() {
-    auth().signOut();
+  function handleLogout() {
+    auth().signOut().catch(error => {
+      console.log(error);
+      return Alert.alert('Sair', 'Não foi possível sair');
+    });
   }
 
   return (
@@ -60,7 +64,7 @@ export function Home() {
 
         <IconButton
           icon={<SignOut size={26} color={colors.gray[300]} />}
-          onPress={logout}
+          onPress={handleLogout}
         />
       </HStack>
 
