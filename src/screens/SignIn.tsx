@@ -25,9 +25,9 @@ export function SingIn() {
 
     auth()
       .signInWithEmailAndPassword(email, password)
-      .then((response) => {
-        console.log(response);
-      })
+      // .then((response) => {
+      //   console.log(response);
+      // })
       .catch((error) => {
         console.log(error);
         setIsLoading(false);

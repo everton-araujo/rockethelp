@@ -40,13 +40,11 @@ export function Register() {
         setIsLoading(false);
         return Alert.alert('Solicitação', 'Não foi possível registrar o pedido');
       });
-
-      console.log('Chegou no fim');
   }
 
   return (
     <VStack flex={1} p={6} bg='gray.600'>
-      <Header title="Nova solicitação" />
+      <Header title="Solicitação" />
 
       <Input 
         placeholder='Número do patrimônio'
